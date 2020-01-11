@@ -17,7 +17,7 @@ def Server():
 
 [ 1 ] Install Web-Server
 [ 2 ] Start Web-Server
-[ 3 ] Stop Web-Server
+[ 3 ] Shutdown Web-Server
 [ 4 ] Restart Web-Server
 [ 5 ] Edit Web-Server
 
@@ -43,13 +43,29 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "2":
         os.system("clear")
+        os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
+        os.system("apachectl start")
+        os.system("clear")
         print(" ")
         print("Starting Web-Server...")
         print(" ")
-        os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
-        os.system("apachectl start")
         time.sleep(4)
         print(" ")
         print("[ ! ] Web-Server Sucesfully Started!")
         print("[ ! ] 127.0.0.1:8080")
+        time.sleep(4)
+        os.system("clear")
+#------------------------------------------------------------------------------
+    elif what == "3":
+        os.system("clear")
+        os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
+        os.system("pkill -f httpd")
+        os.system("clear")
         print(" ")
+        print("Shutdowned Web-Server...")
+        print(" ")
+        time.sleep(4)
+        print(" ")
+        print("[ ! ] Web-Server Sucesfully Shutdowned!")
+        time.sleep(4)
+        os.system("clear")
