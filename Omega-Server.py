@@ -88,6 +88,7 @@ while loop:
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
         os.system("pkill -f httpd")
+        time.sleep(3)
         os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
         os.system("apachectl start")
         os.system("clear")
