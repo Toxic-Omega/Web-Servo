@@ -91,8 +91,8 @@ while loop:
         os.system("pkill -f httpd")
         os.system("pachectl start")
         os.system("clear")
-        print("")
-        print("[ ! ] Web-Server Sucesfully Restarted!")")
+        print(" ")
+        print("[ ! ] Web-Server Sucesfully Restarted!")
         print(" ")
         time.sleep(4)
 #------------------------------------------------------------------------------
@@ -107,6 +107,7 @@ while loop:
         print(" ")
         print("To Exit CTRL + Q")
         print(" ")
+        time.sleep(4)
         os.system("micro Index.html")
         os.system("clear")
         time.sleep(4)
