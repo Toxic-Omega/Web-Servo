@@ -108,6 +108,6 @@ while loop:
         print("To Exit CTRL + Q")
         print(" ")
         time.sleep(4)
-        os.system("micro Index.html")
+        os.system("micro index.html")
         os.system("clear")
         time.sleep(4)
