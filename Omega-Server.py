@@ -28,7 +28,15 @@ while loop:
     Server()
     what = input(">> ")
 #------------------------------------------------------------------------------
-    if what == "1":
+    if what == "x":
+        os.system("clear")
+        print(" ")
+        print("Exiting...")
+        print(" ")
+        exit
+        break
+#------------------------------------------------------------------------------
+    elif what == "1":
         os.system("clear")
         print(" ")
         print("Installing Web-Server...")
@@ -62,7 +70,7 @@ while loop:
         os.system("pkill -f httpd")
         os.system("clear")
         print(" ")
-        print("Shutdowned Web-Server...")
+        print("Shutdowning Web-Server...")
         print(" ")
         time.sleep(4)
         print(" ")
