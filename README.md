@@ -14,6 +14,6 @@ _______________________________________________________________
 Screenshots
 <br>
 <p align="center">
-<img width="50%" src="https://github.com/Toxic-Omega/Omega-Server/Screenshot/Screenshot_20200111-174812_Termux.jpg"/>
+<img width="50%" src="https://github.com/Toxic-Omega/Omega-Server/blob/master/Screenshot/Screenshot_20200111-174812_Termux.jpg"/>
 </p>
 <br>
