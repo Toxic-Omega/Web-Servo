@@ -15,6 +15,7 @@ def Server():
 |  $$$$$$/|  $$$$$$$| $$         \  $/  |  $$$$$$$| $$      
  \______/  \_______/|__/          \_/    \_______/|__/      
                                                             
+                                                            
 [ 1 ] Install Web-Server
 [ 2 ] Start Web-Server
 [ 3 ] Shutdown Web-Server
@@ -86,6 +87,7 @@ while loop:
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
         os.system("pkill -f httpd")
+        os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
         os.system("pachectl start")
         os.system("clear")
         print(" ")
