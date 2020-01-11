@@ -15,9 +15,6 @@ def Server():
 |  $$$$$$/|  $$$$$$$| $$         \  $/  |  $$$$$$$| $$      
  \______/  \_______/|__/          \_/    \_______/|__/      
                                                             
-                                                            
-                                                                
-
 [ 1 ] Install Web-Server
 [ 2 ] Start Web-Server
 [ 3 ] Shutdown Web-Server
