@@ -15,14 +15,41 @@ def Server():
 | $$/   \  $$|  $$$$$$$| $$$$$$$/                    |  $$$$$$/|  $$$$$$$| $$         \  $/  |  $$$$$$$| $$      
 |__/     \__/ \_______/|_______/                      \______/  \_______/|__/          \_/    \_______/|__/      
 
-[ 1 ] Start Web-Server
-[ 2 ] Stop Web-Server
-[ 3 ] Edit Web-Server
+[ 1 ] Install Web-Server
+[ 2 ] Start Web-Server
+[ 3 ] Stop Web-Server
+[ 4 ] Restart Web-Server
+[ 5 ] Edit Web-Server
 
 [ x ] Exit
-    
 """)
 loop = True
 while loop:
     Server()
     what = input(">> ")
+#------------------------------------------------------------------------------
+    if what == "1":
+        os.system("clear")
+        print(" ")
+        print("Installing Web-Server...")
+        print(" ")
+        time.sleep(4)
+        os.system("apt install apache2")
+        os.system("clear")
+        print(" ")
+        print("Web-Server Installed...")
+        print(" ")
+        time.sleep(4)
+#------------------------------------------------------------------------------
+    elif what == "2":
+        os.system("clear")
+        print(" ")
+        print("Starting Web-Server...")
+        print(" ")
+        os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
+        os.system("apachectl start")
+        time.sleep(4)
+        print(" ")
+        print("[ ! ] Web-Server Sucesfully Started!")
+        print("[ ! ] 127.0.0.1:8080")
+        print(" ")
