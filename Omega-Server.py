@@ -4,7 +4,7 @@ import time
 def Server():
     os.system("clear")
     
-    print("""
+    print("""\033[31m
 
   /$$$$$$                                                   
  /$$__  $$                                                  
@@ -17,13 +17,14 @@ def Server():
                                                             
            
            
-[ 1 ] Install Web-Server
-[ 2 ] Start Web-Server
-[ 3 ] Shutdown Web-Server
-[ 4 ] Restart Web-Server
-[ 5 ] Edit Web-Server
+\033[93m[ \033[94m1 \033[93m] Install Web-Server
+\033[93m[ \033[94m2 \033[93m] Start Web-Server
+\033[93m[ \033[94m3 \033[93m] Shutdown Web-Server
+\033[93m[ \033[94m4 \033[93m] Restart Web-Server
+\033[93m[ \033[94m5 \033[93m] Edit Web-Server
 
-[ x ] Exit
+\033[93m[ \033[94mx \033[93m] Exit
+\033[32m
 """)
 loop = True
 while loop:
@@ -33,21 +34,21 @@ while loop:
     if what == "x":
         os.system("clear")
         print(" ")
-        print("Exiting...")
+        print("[ ! ] Exiting...")
         print(" ")
-        exit
-        break
+        os.system(exit)
+        os.system(exit)
 #------------------------------------------------------------------------------
     elif what == "1":
         os.system("clear")
         print(" ")
-        print("Installing Web-Server...")
+        print("[ ! ] Installing Web-Server...")
         print(" ")
         time.sleep(4)
         os.system("apt install apache2")
         os.system("clear")
         print(" ")
-        print("Web-Server Installed...")
+        print("[ ! ] Web-Server Installed...")
         print(" ")
         time.sleep(4)
 #------------------------------------------------------------------------------
@@ -57,7 +58,7 @@ while loop:
         os.system("apachectl start")
         os.system("clear")
         print(" ")
-        print("Starting Web-Server...")
+        print("[ ! ] Starting Web-Server...")
         print(" ")
         time.sleep(4)
         print(" ")
@@ -72,7 +73,7 @@ while loop:
         os.system("pkill -f httpd")
         os.system("clear")
         print(" ")
-        print("Shutdowning Web-Server...")
+        print("[ ! ] Shutdowning Web-Server...")
         print(" ")
         time.sleep(4)
         print(" ")
@@ -83,7 +84,7 @@ while loop:
     elif what == "4":
         os.system("clear")
         print(" ")
-        print("Restarting Web-Server...")
+        print("[ ! ] Restarting Web-Server...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/usr/share/apache2/default-site/htdocs")
@@ -100,7 +101,7 @@ while loop:
     elif what == "5":
         os.system("clear")
         print(" ")
-        print("Installing Editing Program...")
+        print("[ ! ] Installing Editing Program...")
         print(" ")
         time.sleep(4)
         os.system("apt install micro")
