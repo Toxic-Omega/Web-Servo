@@ -14,7 +14,7 @@ _______________________________________________________________
 Screenshots
 <br>
 <p align="center">
-<img width="44%" src="https://github.com/Toxic-Omega/Omega-Server/blob/master/Screenshot/Screenshot_20200111-174812_Termux.jpg"/>
- <img width="50%" src="https://github.com/Toxic-Omega/Omega-Server/blob/master/Screenshot/Screenshot_20200111-175903_Chrome.jpg"/>
+<img width="44%" src="https://github.com/Toxic-Omega/Omega-Server/blob/master/Screenshot/Screenshot_20200118-150804_Termux.jpg"/>
+ <img width="50%" src="https://github.com/Toxic-Omega/Omega-Server/blob/master/Screenshot/Screenshot_20200118-151310_Chrome.jpg"/>
 </p>
 <br>
