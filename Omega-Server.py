@@ -36,8 +36,9 @@ while loop:
         print(" ")
         print("[ ! ] Exiting...")
         print(" ")
-        os.system("exit")
-        os.system("exit")
+        os.system("ls")
+        exit
+        break
 #------------------------------------------------------------------------------
     elif what == "1":
         os.system("clear")
