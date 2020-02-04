@@ -32,7 +32,7 @@ while loop:
         os.system("ls")
         os.system("clear")
         print(" ")
-        print("\033[32m[\033[31m*\033[32m]")
+        print("\033[32m[\033[31m*\033[32m] Exiting...")
         print(" ")
         exit
         break
